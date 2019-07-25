@@ -24,13 +24,18 @@
 
 <body>
 
-<div class="container d-flex j-space align-center h-60">
+<div class="top_block container d-flex j-space align-center h-60">
     <div class="logo">
         <a href="/">
             <img src="img/_src/logo.svg" alt="логотип компании Gim">
         </a>
     </div>
 
+    <div class="xs-menu">
+        <span class="before"></span>
+        <span></span>
+        <span class="after"></span>
+    </div>
     <div class="right_block d-flex align-center">
         <div class="number_block">
             <img src="img/_src/phone.svg" alt="иконка телефона">
@@ -49,6 +54,24 @@
 <div class="bg">
     <div class="container">
         <div class="top_menu d-flex j-end">
+            <noindex>
+                <div class="xs_info">
+                    <div class="number_mail">
+                        <div class="number_block">
+                            <img src="img/_src/phone.svg" alt="иконка телефона">
+                            <a href="tel:+37123472844">+371 234-72-844</a>
+                        </div>
+                        <div class="mail_block">
+                            <img src="img/_src/mail.svg" alt="иконка почты">
+                            <a href="mailto:info@gim.lv">info@gim.lv</a>
+                        </div>
+                    </div>
+                    <div class="language_block d-flex">
+                        <a href="#" class="active">RU</a>
+                        <a href="#">LV</a>
+                    </div>
+                </div>
+            </noindex>
             <ul class="list_menu d-flex align-center">
                 <li class="item_menu"><a href="#">Кандидаты</a></li>
                 <li class="item_menu"><a href="#">О нас</a></li>
@@ -58,14 +81,14 @@
         </div>
     </div>
 
-    <div class="container d-flex j-space mt-50">
+    <div class="container d-flex j-space pt-50 f-wrap">
         <div class="left_block">
             <h1>Тестовое задание для верстальщика</h1>
             <p>Global Internet Marketing</p>
 
             <ul class="main_list">
                 <li>Работа в новом уютном офисе</li>
-                <li>Мощный компьютер с двумя мониторами 27</li>
+                <li>Мощный компьютер с 2 мониторами 27"</li>
                 <li>Вкуснейший кофе и чай за счет компании</li>
             </ul>
         </div>
@@ -83,12 +106,13 @@
                 </div>
                 <div class="form_control d-flex">
                     <label class="phone_before">+371</label>
-                    <input class="input_control input_after" type="text" name="phone" placeholder="Номер телефона" required>
+                    <input class="input_control input_after" type="text" name="phone" placeholder="Номер телефона"
+                           required>
 
                 </div>
                 <div class="form_checkbox d-flex align-center">
                     <input type="checkbox" id="ok" required>
-                    <label for="ok">нажимая на кнопку я соглашаюсь на <a href="#">обработку моих персональных данных</a></label>
+                    <label for="ok">Нажимая на кнопку, я соглашаюсь на <a href="#">обработку моих персональных данных</a></label>
                 </div>
                 <button type="submit" class="btn_send">Отправить заявку</button>
             </form>
@@ -101,36 +125,44 @@
         <p>Преимущества <span>работы в Gim</span></p>
     </div>
 
-    <div class="list_a d-flex j-space">
+    <div class="list_a d-flex j-space f-wrap">
         <div class="item_a">
             <img src="img/_src/list_1.svg" alt="Преимущество 1">
-            <p>Официальное трудоустройство</p>
-            <span>Вы будете получать официальную зарплату на банковский счёт</span>
+            <div class="item_text">
+                <p>Официальное трудоустройство</p>
+                <span>Вы будете получать официальную зарплату на банковский счёт</span>
+            </div>
         </div>
         <div class="item_a">
             <img src="img/_src/list_2.svg" alt="Преимущество 2">
-            <p>Стабильная зарплата без задержек</p>
-            <span>Мы стабильно выплачиваем зарплату вначале месяца без задержек</span>
+            <div class="item_text">
+                <p>Стабильная зарплата без задержек</p>
+                <span>Мы стабильно выплачиваем зарплату вначале месяца без задержек</span>
+            </div>
         </div>
         <div class="item_a">
             <img src="img/_src/list_3.svg" alt="Преимущество 3">
-            <p>Интересные проекты для развития навыком</p>
-            <span>Вы 100% сможете многому научиться и освоить новые технологии работая у нас</span>
+            <div class="item_text">
+                <p>Интересные проекты для развития навыком</p>
+                <span>Вы 100% сможете многому научиться и освоить новые технологии работая у нас</span>
+            </div>
         </div>
         <div class="item_a">
             <img src="img/_src/list_4.svg" alt="Преимущество 4">
-            <p>Рабочий день начинается в 10:00</p>
-            <span>Вы сможете спокойно выспаться и доехать до офиса утром без пробок</span>
+            <div class="item_text">
+                <p>Рабочий день начинается в 10:00</p>
+                <span>Вы сможете спокойно выспаться и доехать до офиса утром без пробок</span>
+            </div>
         </div>
     </div>
 </div>
 
 <footer class="footer">
-    <div class="container h-60 d-flex j-space align-center">
-        <div class="w-50 footer_text">
-            <p>Вы сможете спокойно выспаться и доехать до офиса утром без пробок</p>
+    <div class="container h-60 d-flex j-space align-center f-wrap h-unset">
+        <div class="w-70 footer_text">
+            <p>Copyright © 2019 Global Internet Marketing. All rights reserved.</p>
         </div>
-        <div class="w-50 cooping">
+        <div class="w-30 cooping">
             <a href="#">Политика конфиденциальности</a>
         </div>
     </div>
