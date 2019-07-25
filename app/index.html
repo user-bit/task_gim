@@ -58,9 +58,9 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container d-flex j-space mt-50">
         <div class="left_block">
-            <h1>Тестовое задание для верстальшика</h1>
+            <h1>Тестовое задание для верстальщика</h1>
             <p>Global Internet Marketing</p>
 
             <ul class="main_list">
@@ -71,30 +71,70 @@
         </div>
 
         <div class="feedback_block">
-            <div class="title_feedback">
+            <div class="title_feedback d-flex align-center">
                 <p>Отправьте заявку на вакансию программиста</p>
             </div>
             <form class="feedback_form">
                 <div class="form_control">
-                    <input class="input_control" type="text" name="name" placeholder="Имя и Фамилия">
+                    <input class="input_control" type="text" name="name" placeholder="Имя и Фамилия" required>
                 </div>
                 <div class="form_control">
-                    <input class="input_control" type="text" name="email" placeholder="Email">
+                    <input class="input_control" type="text" name="email" placeholder="Email" required>
                 </div>
-                <div class="form_control">
+                <div class="form_control d-flex">
                     <label class="phone_before">+371</label>
-                    <input class="input_control" type="text" name="phone" placeholder="Номер телефона">
+                    <input class="input_control input_after" type="text" name="phone" placeholder="Номер телефона" required>
 
                 </div>
-                <div class="form_checkbox">
-                    <input type="checkbox" id="ok">
+                <div class="form_checkbox d-flex align-center">
+                    <input type="checkbox" id="ok" required>
                     <label for="ok">нажимая на кнопку я соглашаюсь на <a href="#">обработку моих персональных данных</a></label>
                 </div>
+                <button type="submit" class="btn_send">Отправить заявку</button>
             </form>
         </div>
     </div>
 </div>
 
+<div class="container mt-80">
+    <div class="title_name">
+        <p>Преимущества <span>работы в Gim</span></p>
+    </div>
+
+    <div class="list_a d-flex j-space">
+        <div class="item_a">
+            <img src="img/_src/list_1.svg" alt="Преимущество 1">
+            <p>Официальное трудоустройство</p>
+            <span>Вы будете получать официальную зарплату на банковский счёт</span>
+        </div>
+        <div class="item_a">
+            <img src="img/_src/list_2.svg" alt="Преимущество 2">
+            <p>Стабильная зарплата без задержек</p>
+            <span>Мы стабильно выплачиваем зарплату вначале месяца без задержек</span>
+        </div>
+        <div class="item_a">
+            <img src="img/_src/list_3.svg" alt="Преимущество 3">
+            <p>Интересные проекты для развития навыком</p>
+            <span>Вы 100% сможете многому научиться и освоить новые технологии работая у нас</span>
+        </div>
+        <div class="item_a">
+            <img src="img/_src/list_4.svg" alt="Преимущество 4">
+            <p>Рабочий день начинается в 10:00</p>
+            <span>Вы сможете спокойно выспаться и доехать до офиса утром без пробок</span>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container h-60 d-flex j-space align-center">
+        <div class="w-50 footer_text">
+            <p>Вы сможете спокойно выспаться и доехать до офиса утром без пробок</p>
+        </div>
+        <div class="w-50 cooping">
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
 
 <script src="js/scripts.min.js"></script>
 </body>

@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-	// Custom JS
+    $('.language_block a').on('click', function () {
+        $('.language_block a').removeClass('active');
+        $(this).addClass('active');
+    });
 
 });
