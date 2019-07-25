@@ -1,0 +1,152 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+p, a, input
+	font-family: 'Raleway', sans-serif
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Raleway', sans-serif
+	overflow-x: hidden
+	color: $text
+
+// Custom Sass / Remove before use
+
+.container
+	max-width: 1190px
+	padding:
+		right: $gutter/2
+		left: $gutter/2
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.example-grid
+	display: grid
+	grid-gap: $gutter
+	grid-template-columns: 1fr 1fr
+	grid-template-areas: "left right"
+	> div:first-child
+		grid-area: left
+	> div:last-child
+		grid-area: right
+	+media-breakpoint-down(xs)
+		display: block
+		> div
+			padding: $gutter/2 0
+	
+.example-img
+	width: 100%
+
+.d-flex
+	display: flex
+
+.j-space
+	justify-content: space-between
+
+.j-end
+	justify-content: flex-end
+
+.h-60
+	height: 60px
+
+.align-center
+	align-items: center
+
+.bg
+	background-image: url(../img/_src/bg.png)
+	min-height: 630px
+	width: 100%
+	background-size: 100%
+
+.language_block a
+	width: 35px
+	height: 35px
+	border: 1px solid #A5A5A5
+	border-radius: 50%
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #A5A5A5
+	font-size: 14px
+	margin-left: 10px
+	transition: .3s
+
+.language_block a:hover
+	text-decoration: none
+	color: #F83B6A
+	border: 1px solid #F83B6A
+
+a.active
+	border: 1px solid #F83B6A
+	color: #F83B6A
+
+.mail_block a, .number_block a
+	color: #33273D
+	font-size: 13px
+	transition: .3s
+
+.mail_block a:hover, .number_block a:hover
+	text-decoration: none
+	color: #000
+
+.language_block
+	margin-left: 46px
+
+.mail_block
+	margin-left: 20px
+
+ul.list_menu
+	height: 50px
+	background: rgba(248, 59, 106, 0.35);
+	border-radius: 0 0 6px 6px
+	list-style-type: none
+	padding: 0 30px
+
+li.item_menu
+	min-width: 100px
+	padding: 0 10px
+	text-align: center
+
+li.item_menu a
+	position: relative
+	width: max-content
+	color: #fff
+	font-size: 14px
+	text-decoration: none
+
+li.item_menu a::before
+	content: ''
+	left: 0
+	bottom: 0
+	position: absolute
+	width: 0
+	height: 1px
+	background-color: #fff
+	transition: 0.4s
+
+li.item_menu a:hover::before
+	width: 100%
